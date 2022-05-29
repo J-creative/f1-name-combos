@@ -34,14 +34,6 @@ void printTriples(char arr[MAX_NAMES][CHARS], int length)
         strcat(joined,arr[2]);
         compare(joined);
 }
-void printQuads(char arr[MAX_NAMES][CHARS], int length)
-{
-        char joined[CHARS*3]="";
-        strcat(joined,arr[0]);
-        strcat(joined,arr[1]);
-        strcat(joined,arr[2]);
-        compare(joined);
-}
 
 void permutation(char arr[MAX_NAMES][CHARS], int start, int end)
 {
@@ -51,11 +43,6 @@ void permutation(char arr[MAX_NAMES][CHARS], int start, int end)
     if(start==3) //we can return after 3 because t
     {
         printTriples(arr, end+1);
-        //return;
-    }
-    if(start==4) //we can return after 3 because t
-    {
-        printQuads(arr, end+1);
         return;
     }
     int i;
@@ -92,7 +79,7 @@ int main(){
 
 
     //construct array
-    char string[] = "HAM,HEI,ROS,ALO,KOV,NAK,BOU,RAI,KUB,GLO,SAT,PIQ,MAS,COU,TRU,SUT,WEB,BUT,DAV,VET,FIS,BAR,SCH,LIU,WUR,SPE,ALB,WIN,YAM,MSC,MON,KLI,TMO,IDE,VIL,FMO,DLR,DOO,KAR,FRI,ZON,PIZ,BUE,BAD,MAG,ALG,GRO,KOB,BIA,GAS,HUL,PET,DIG,SEN,CHA,MAL,DIR,PER,DAM,RIC,VER,PIC,CHI,GUT,BOT,VDG,BIA,MAG,KVY,LOT,ERI,STE,VER,NAS,SAI,MER,RSS,PAL,WEH,HAR,VAN,OCO,STR,GIO,HAR,LEC,SIR,NOR,RUS,ALB,LAT,FIT,AIT,TSU,MAZ,MSC,ZHO";
+    char string[] = "HAM,HEI,ROS,ALO,KOV,NAK,BOU,RAI,KUB,GLO,SAT,PIQ,MAS,COU,TRU,SUT,WEB,BUT,DAV,VET,FIS,BAR,SCH,LIU,WUR,SPE,ALB,WIN,YAM,MSC,MON,KLI,TMO,IDE,VIL,FMO,DLR,DOO,KAR,FRI,ZON,PIZ,BUE,BAD,MAG,ALG,GRO,KOB,GAS,HUL,PET,DIG,SEN,CHA,MAL,DIR,PER,DAM,RIC,PIC,CHI,GUT,BOT,VDG,BIA,MAG,KVY,LOT,ERI,STE,VER,NAS,SAI,MER,RSS,PAL,WEH,HAR,VAN,OCO,STR,GIO,HAR,LEC,SIR,NOR,RUS,ALB,LAT,FIT,AIT,TSU,MAZ,MSC,ZHO";
     char nams[MAX_NAMES][CHARS];
     int i=0; //for string
     int j=0; // for each name

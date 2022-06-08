@@ -6,7 +6,7 @@ F1 uses 3 letter abreviations for driver names: Lewis Hamilton becomes HAM Sergi
 
 The name was obtained from the website kaggle who credits thier source as <http://ergast.com/mrd/>. Apparently the 3 character identifier is a new thing because only 92 drivers have it, I'm not entirely sure of the history of it.
 
-The 479 word list was obtained from following repo <https://github.com/dwyl/english-words>
+The 479k word list was obtained from following repo <https://github.com/dwyl/english-words>
 
 ## Code
 
